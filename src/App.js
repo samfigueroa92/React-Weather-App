@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+//React methods
+import React, {useState} from "react";
+//Components
+import Weather from "./components/Weather";
+import DisplayCurrent from "./components/DisplayCurrent";
+import PreviousSearches from "./components/PreviousSearches";
+import DisplayThreeDay from "./components/DisplayThreeDay";
+//Styling
+import "./App.css"
 
-function App() {
+const App = () => {
+  const [location, setLocation] = useState('');
+  const [weather, setWeather] = useState({});
+  console.log(weather)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <h1>Weather App</h1>
       </header>
+      <Weather location={location} setLocation={setLocation} setWeather={setWeather}/>
+      <DisplayCurrent weather={weather} />
+      <DisplayThreeDay weather={weather}/>
+      <PreviousSearches location={location} weather={weather}/>
     </div>
   );
 }

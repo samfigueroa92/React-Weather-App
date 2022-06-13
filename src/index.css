@@ -1,8 +1,15 @@
+html {
+  background-image: url("https://wallpaperaccess.com/full/1249894.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aliceblue;
+  background-attachment: fixed;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +17,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.footer{
+  background-color: rgb(146, 188, 244);
+  border: 3px solid white;
+  border-radius: 25px;
+  margin: 5px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 0.8;
+  font-weight: bold;
 }
